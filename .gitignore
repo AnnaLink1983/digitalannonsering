@@ -1,0 +1,12 @@
+# Build output
+dist/
+.DS_Store
+
+# Dependencies — alla node_modules ignoreras EFTER klonar, men vi behåller
+# @ica-azure/ica-elements incheckad eftersom paketet ligger på ICAs privata
+# registry och inte kan hämtas via `npm install`.
+# Kör `npm install` i prototyp/app/ för att återställa publika deps.
+node_modules
+!prototyp/node_modules
+prototyp/node_modules/*
+!prototyp/node_modules/@ica-azure

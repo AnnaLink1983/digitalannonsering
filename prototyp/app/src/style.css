@@ -1,0 +1,50 @@
+/* ICA Design Tokens */
+:root {
+  --ica-red: #e13205;
+  --ica-red-dark: #9b0600;
+  --ica-red-light: #fcece7;
+  --ica-red-hover: #cf2e05;
+  --ica-text: #3a3a3a;
+  --ica-text-secondary: #6e6e6e;
+  --ica-border: #ebebeb;
+  --ica-subtle: #f6f6f6;
+  --ica-bg: #ffffff;
+  --ica-bg-page: #f9f5f5; /* Sidans helbakgrund (under DesktopNav, runt layout-two-columns) */
+  --ica-shadow: 0 2px 10px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.05);
+  --ica-status-warning: #f5a623;
+  --ica-status-success: #4caf50;
+  --ica-status-aktiv: #008933;
+  --ica-teal: #007a78;
+  --ica-spacing-xs: 0.25rem;
+  --ica-spacing-sm: 0.5rem;
+  --ica-spacing-md: 1rem;
+  --ica-spacing-lg: 1.5rem;
+  --ica-spacing-xl: 2rem;
+  --ica-radius-sm: 0.25rem;
+  --ica-radius: 0.5rem;
+  --ica-radius-lg: 1rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ICATextNy, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ica-text);
+  background: #eee;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* App mount — fyller viewporten. layout-two-columns centrerar sitt innehåll
+   inom max 1360px, så vyerna är centrerade automatiskt. */
+#app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: var(--ica-bg);
+}

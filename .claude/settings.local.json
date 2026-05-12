@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__6f1f6bd7-9414-4a01-9b96-59154967b3f8__get_screenshot",
+      "mcp__6f1f6bd7-9414-4a01-9b96-59154967b3f8__get_metadata",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(chmod +x setup.sh)",
+      "Bash(./setup.sh)",
+      "mcp__6f1f6bd7-9414-4a01-9b96-59154967b3f8__get_design_context",
+      "Bash(curl -s -o /tmp/figma-pris-tab.png \"https://www.figma.com/api/mcp/asset/1fbfe831-7723-4203-83d4-3579fb8d8f88\")",
+      "Read(//tmp/**)",
+      "Bash(awk '/<template>/{flag=1} flag{print} /<\\\\/template>/{flag=0; exit}' ArticleView.vue)",
+      "Bash(awk '/<template>/{flag=1} flag{print} /<\\\\/template>/{flag=0; exit}' /Users/zcb447/Documents/Claude/MinButik/desktop-template/prototyp/app/src/views/_templates/ArticleView.vue)",
+      "Bash(awk 'NR>=140 && NR<=150' /Users/zcb447/Documents/Claude/MinButik/desktop-template/prototyp/app/src/views/_templates/ArticleView.vue)",
+      "Bash(timeout 10 npx vue-tsc --noEmit src/views/_templates/ArticleView.vue)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
